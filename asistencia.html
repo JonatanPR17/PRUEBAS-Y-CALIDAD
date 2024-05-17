@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Entrada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="./fotos/logo-company.jpg" alt="Logo de la Veterinaria">
+        </div>
+        <div class="header-center">
+            <h2>"VETERINARIA TOMMY"</h2>
+            <nav>
+                <a href="asistencia.html">Registro de Asistencia</a>
+                <a href="salida.html">Registro de Salida</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Registro de Entrada</h1>
+        <form id="attendance-form">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required maxlength="8" inputmode="numeric">
+            <button type="submit">Registrar Entrada</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="attendance.js"></script>
+</body>
+</html>
